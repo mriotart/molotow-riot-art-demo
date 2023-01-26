@@ -188,7 +188,7 @@ footer {
     letter-spacing: 0.1rem;
     font-weight: bold;
     margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     padding: 0 .4rem;
     color: var(--mra-accent-color);
     text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #a10000, 0 0 10px #cc2323, 0 0 50px #ff4848;
@@ -312,11 +312,18 @@ footer {
 /* =================================================================================== */
 /* Eyecatcher Section */
 #mrt__eyecatcher {
-    background-image: url(../assets/images/murder-on-dancefloor.png);
-    background-size: cover;
+    /*background-image: url(../assets/images/murder-on-dancefloor.png);*/
+    /*background-size: cover;*/
     background-position: center center;
     position: relative;
     z-index: 1;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
 }
 
 #mrt__eyecatcher::after {
@@ -329,6 +336,11 @@ footer {
     background-color: black;
     opacity: 0.7;
     z-index: -1;
+}
+
+.mrt__eyecatcher-container-full svg{
+    height: 60vh;
+    margin-top: 3rem;
 }
 
 .mrt__eyecatcher-container-full {
@@ -778,7 +790,7 @@ footer {
     .mrt__main-section-title {
         /*font-size: 3rem;*/
         margin-top: 5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 
     .mrt__main-section-subtitle {

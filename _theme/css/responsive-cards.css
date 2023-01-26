@@ -1,0 +1,56 @@
+.mra__responsive-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.mra__responsive-img-card {
+    flex: 1 0 300px;
+    margin: 10px;
+    /*border: 1px solid #ccc;*/
+    max-width: 400px;
+    /*box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);*/
+    background-color: var(--bg-color-elevation-1);
+    /*background-color: rgba(18, 141, 127, 0.12);*/
+}
+
+.mra__responsive-img-card img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    /*width: 100vw;*/
+
+}
+
+.mra__responsive-img-card .text {
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.mra__responsive-img-card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.mra__responsive-card-date {
+    font-size: .8rem;
+    color: var(--body-text-color-dimmed);
+}
+
+.mra__responsive-img-card a {
+    color: var(--body-text-color);
+}
+
+.mra__responsive-card-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--mra-accent-color-low-sat);
+}
+
+
